@@ -6,14 +6,14 @@
 /*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/07 20:15:36 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/07 23:14:29 by eandrukh         ###   ########.fr       */
+/*   Updated: 2025/03/10 21:32:31 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
-		return (0);
-	else
 		return (1);
+	else
+		return (0);
 }

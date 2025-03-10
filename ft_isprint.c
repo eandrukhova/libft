@@ -6,14 +6,14 @@
 /*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/09 22:41:47 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/09 22:57:44 by eandrukh         ###   ########.fr       */
+/*   Updated: 2025/03/10 21:32:46 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-		return (0);
-	else
 		return (1);
+	else
+		return (0);
 }

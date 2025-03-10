@@ -6,14 +6,14 @@
 /*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/09 22:39:09 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/09 22:50:42 by eandrukh         ###   ########.fr       */
+/*   Updated: 2025/03/10 21:32:25 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c >= 0 && c <= 127) 
-		return (0);
-	else
+	if (c >= 0 && c <= 127)
 		return (1);
+	else
+		return (0);
 }
