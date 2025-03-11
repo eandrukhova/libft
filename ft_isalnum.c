@@ -6,7 +6,7 @@
 /*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/07 22:10:07 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/10 21:34:06 by eandrukh         ###   ########.fr       */
+/*   Updated: 2025/03/11 23:14:28 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	if ((ft_isalpha(c) == 0) || (ft_isdigit(c) == 0))
+	if ((ft_isalpha(c) == 1) || (ft_isdigit(c) == 1))
 		return (1);
 	else
 		return (0);
