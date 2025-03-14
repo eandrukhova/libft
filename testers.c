@@ -6,7 +6,7 @@
 /*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 23:35:34 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/09 23:27:28 by eandrukh         ###   ########.fr       */
+/*   Updated: 2025/03/15 00:07:26 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,19 @@ int	main(int argc, char **argv)
 	l = ft_strlen("hello w");
 	printf("Word length %i", l);
 
+	char strsrc[]="Hello World";
+    char strdest[]="12345678900";
+	char *dest;
+    printf("original value dest: %s \n", strdest );
+    printf("original value source: %s \n", strsrc );
+    ft_memcpy(strdest, strsrc, 6);
+	    
+    printf("after memcpy value dest: %s \n", strdest );
+    printf("after memcpy value source: %s \n", strsrc );
+
+	
+	ft_memmove(strsrc + 2, strsrc, 6);
+
+    printf("after memmove value source: %s \n", strsrc );
 	return (0);
 }

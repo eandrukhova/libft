@@ -1,21 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/09 22:48:33 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/14 14:36:23 by eandrukh         ###   ########.fr       */
+/*   Created: 2025/03/15 00:20:23 by eandrukh          #+#    #+#             */
+/*   Updated: 2025/03/15 00:21:54 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
-	{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
+size_t	strlcpy(char dst[restrict .sz], const char *restrict src,
+				size_t sz)
+{
+	
 }

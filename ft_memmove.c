@@ -1,21 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/09 22:48:33 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/14 14:36:23 by eandrukh         ###   ########.fr       */
+/*   Created: 2025/03/14 13:36:22 by eandrukh          #+#    #+#             */
+/*   Updated: 2025/03/15 00:18:18 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(const char *s)
-	{
-	int	i;
+#include "libft.h"
+#include <stdio.h>
 
+void	*ft_memmove(void *dest, void const *src, size_t n)
+{
+	unsigned char		*ptr_dest;
+	unsigned const char	*ptr_src;
+	size_t				i;
+
+	ptr_dest = (unsigned char *)dest;
+	ptr_src = (unsigned char *)src;
 	i = 0;
-	while (s[i] != '\0')
+	while (i < n)
+	{
+		if (dest < src)
+			ptr_dest[i] = ptr_src[i];
+		else if (dest > src)
+			ptr_dest[n - i - 1] = ptr_src[n - i - 1];
 		i++;
-	return (i);
+	}
+	return (dest);
 }
