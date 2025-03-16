@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+         #
+#    By: eandrukh <eandrukh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/07 22:59:05 by eandrukh          #+#    #+#              #
-#    Updated: 2025/03/16 12:43:55 by eandrukh         ###   ########.fr        #
+#    Updated: 2025/03/16 16:33:28 by eandrukh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libft.a
 
-src = ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memset.c  ft_strlen.c ft_bzero.c ft_toupper.c ft_tolower.c ft_memcpy.c ft_memmove.c ft_strchr.c ft_strrchr.c ft_memchr.c ft_memcmp.c ft_strncmp.c ft_atoi.c ft_strlcpy.c
+src = ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isalnum.c ft_isprint.c ft_memset.c  ft_strlen.c ft_bzero.c ft_toupper.c ft_tolower.c ft_memcpy.c ft_memmove.c ft_strchr.c ft_strrchr.c ft_memchr.c ft_memcmp.c ft_strncmp.c ft_atoi.c ft_strlcpy.c ft_strlcat.c
 
 obj = $(src:%.c=%.o)
 
@@ -41,5 +41,5 @@ fclean	:	clean
 re	:	fclean all
 
 test: re 
-	cd libft-war-machine && bash grademe.sh && cd .. 
+	cd .. && cd libft-war-machine && bash grademe.sh && cd .. && cd libft 
 	

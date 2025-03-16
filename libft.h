@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eandrukh <eandrukh@student.42heilbronn.    +#+  +:+       +#+        */
+/*   By: eandrukh <eandrukh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/07 22:59:13 by eandrukh          #+#    #+#             */
-/*   Updated: 2025/03/16 12:50:58 by eandrukh         ###   ########.fr       */
+/*   Updated: 2025/03/16 16:33:03 by eandrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@
 	int	ft_strncmp(const char *s1, const char *s2, size_t n);
 	int ft_atoi(const char *nptr);
 	size_t	ft_strlcpy(char *dst, const char *restrict src,	size_t sz);
+	size_t	ft_strlcat(char *dst, const char *restrict src,	size_t dstsize);
 #endif
